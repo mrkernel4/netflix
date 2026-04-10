@@ -1,62 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<div id="app">
-    <div id="container-profile">
-
-        <div id="logo">
-            <h2>Netflix</h2>
-        </div>
-
-        <div id="header-profile">
-            <h1>Who is watching?</h1>
-        </div>
-
-        <div id="list-profile">
-
-            <button class="profile-card" onclick="selectProfile('luly')">
-                <div class="profile-image">
-                    <img src="images/luly.jpeg">
+    <body>
+        <div id="app">
+            <div id="profile-screen">
+                <div id="logo">
+                    <img src="user/netflix.png" alt="">
                 </div>
-                <div class="profile-name">luly</div>
-            </button>
 
-            <button class="profile-card" onclick="selectProfile('bernardo')">
-                <div class="profile-image">
-                    <img src="images/bernardo.jpeg">
+                <div id="title">
+                    <h2>Quem esta assistindo?</h2>
                 </div>
-                <div class="profile-name">bernardo</div>
-            </button>
 
-            <button class="profile-card" onclick="selectProfile('braiaboss')">
-                <div class="profile-image">
-                    <img src="images/braiax.jpeg">
+                <div id="profiles-list">
+                    <div class="profile">
+                        <div class="image"><img src="images/braiaboss.png" alt=""></div>
+                        <div class="name">braiaboss</div>
+                    </div>
+                    <div class="profile">
+                        <div class="image"><img src="images/batore.jpeg" alt=""></div>
+                        <div class="name">batore</div>
+                    </div>
+                    <div class="profile">
+                        <div class="image"><img src="images/luly.jpeg" alt=""></div>
+                        <div class="name">luly</div>
+                    </div>
                 </div>
-                <div class="profile-name">braiaboss</div>
-            </button>
 
-            <button class="profile-card" onclick="selectProfile('batore')">
-                <div class="profile-image">
-                    <img src="images/batore.jpeg">
-                </div>
-                <div class="profile-name">batore</div>
-            </button>
-
+                <footer id="footer">
+                    <button>Gerenciar Perfis</button>
+                </footer>
+            </div>
         </div>
-
-        <div id="footer-profile">
-            <button>Manage profiles</button>
-        </div>
-
-    </div>
-</div>
-</body>
+    </body>
 </html>
