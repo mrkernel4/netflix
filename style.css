@@ -77,4 +77,32 @@ body {
     left: 10px;
     color: rgb(197, 33, 21);
 }
+
+@media (max-width: 900px) {
+    #container-profile {
+        transform: scale(1.4);
+        transform-origin: center;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #header-profile h1 {
+        font-size: 2rem;
+    }
+
+    #logo h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.profile-card {
+    transition: transform 0.2s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+}
  
