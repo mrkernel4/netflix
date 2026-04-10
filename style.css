@@ -1,121 +1,42 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+#profile-screen {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: black;
+    color: rgb(255, 255, 255);
 }
 
-/* CONTAINER PRINCIPAL */
-#container-profile {
+#logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100px;
+    height: 50px;
+}
+
+
+#profiles-list {
     min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* LOGO */
-#logo h2 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* TITULO */
-#header-profile h1 {
-    margin: 20px 0;
-    font-size: 2rem;
-    text-align: center;
-}
-
-/* LISTA DE PERFIS */
-#list-profile {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* CARD */
-.profile-card {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    color: white;
-    transition: transform 0.2s ease;
+    justify-content: center;
+    gap: px;
 }
 
-.profile-card:hover {
-    transform: scale(1.1);
+.image {
+    display: flex;
+    width: 280px;
+    height: 280px;
 }
 
-/* IMAGEM */
-.profile-image img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-/* NOME */
-.profile-name {
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-/* FOOTER */
-#footer-profile {
-    margin-top: 30px;
-}
-
-#footer-profile button {
-    background: transparent;
-    border: 1px solid gray;
-    color: white;
-    padding: 8px 16px;
-    cursor: pointer;
-}
-
-/* ========================= */
-/* MOBILE (CELULAR DEITADO)  */
-/* ========================= */
-@media (max-width: 900px) and (orientation: landscape) {
-
-    #container-profile {
-        padding: 10px;
+@media (max-width: 600px) {
+    .image {
+        width: 80px;
+        height: 80px;
     }
 
-    #logo h2 {
-        font-size: 2rem;
+    #profiles-list {
+        gap: 12px;
     }
-
-    #header-profile h1 {
-        font-size: 1.5rem;
-        margin: 10px 0;
-    }
-
-    #list-profile {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
-    }
-
-    .profile-image img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .profile-name {
-        font-size: 0.9rem;
-    }
-}
