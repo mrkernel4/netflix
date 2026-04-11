@@ -1,4 +1,91 @@
+body {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+}
+
 #logo {
     display: flex;
-    height: 67px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height:100px;
 }
+
+
+#profile-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#profiles-list {
+    display: flex;
+    gap: 20px;
+    transform: translateY(-75px);
+}
+
+#title {
+    color: rgb(190, 190, 190);
+    font-size: 30px;
+    transform: translateY(-75px);
+}
+
+#footer {
+    display: flex;
+    transform: translateY(75px);
+}
+
+#footer button {
+    color: rgb(90, 90, 90);
+    background-color: transparent;
+    border: 2px solid rgb(90, 90, 90);
+    width: 320px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+#footer:hover button {
+    transform: scale(1.1);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.image {
+    width: 267px;
+    height: 267px;
+    overflow: hidden;
+    transition: 0.5s
+    
+}
+
+.profile:hover .image {
+    transform: scale(1.1);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.name {
+    color: rgb(90, 90, 90);
+    display: flex;
+    transform: translateY(12px);
+}
+
+
+
+
